@@ -1,0 +1,125 @@
+body {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-size: cover;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "East Sea Dokdo", cursive;
+  background-image: url(img/soju.jpeg);
+}
+
+
+.container {
+    border: 10px solid white;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(247, 243, 242, 0.7);
+  }
+.input-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+  .form-control {
+    size: 100%;
+    font-size: 3vw;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+
+  .big-title{
+    font-size: 5vw;
+    font-weight: bold;
+    color: blue;
+  }
+
+  title {
+    font-size: 7vw;
+    font-weight: bold;
+  }
+  .sub-title {
+    font-size: 6vw;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .main-img{
+    width: 30vw;
+    height:30vh;
+  }
+
+  .red-text{
+    color: red;
+  }
+
+  .go-bttn{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width:100px;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .reset-bttn{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    height: 40px;
+    width:100px;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media (max-width: 800px){
+    .big-title {
+        font-size: 10vw;
+      }
+      .title {
+        font-size: 12vw;
+      }
+      .sub-title {
+        font-size: 11vw;
+      }
+      .form-control {
+        font-size: 8vw;
+        max-width: 500px;
+        margin-right: 0px;
+      }
+      .main-img {
+        width: 40vw;
+      }
+
+      .input-box{
+        flex-direction: column;
+        
+      }
+
+      .go-bttn{
+
+        border-radius: 5px;
+        height: 20px;
+        width:60px;
+        font-size: 10pt;
+      }
+
+      .reset-bttn{
+
+        border-radius: 5px;
+        height: 20px;
+        width:60px;
+        font-size: 10pt;
+      }
+    
+  }
