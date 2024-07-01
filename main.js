@@ -5,9 +5,12 @@ let resetButton = document.getElementById("reset-button");
 let userInput = document.getElementById("user-input");
 let resultArea = document.getElementById("result-area");
 let chanceArea = document.getElementById("chance-area");
-let chance = 5;
+let chance = 3;
 let gameOver= false;
 let history = [];
+
+
+chanceArea.textContent=`남은 기회 ${chance}번`;
 
 playButton.addEventListener("click", play);
 resetButton.addEventListener("click",reset);
@@ -15,6 +18,7 @@ userInput.addEventListener("focus",()=>{userInput.value=""})
 
 function pickRandomNum(params) {
   computerNum = Math.floor(Math.random() * 100) + 1;
+  resultArea.textContent = `정답은 ${computerNum}`;
   console.log("정답", computerNum);
 }
 
@@ -48,7 +52,7 @@ function play() {
   history.push(userValue);
 
   if(chance < 1){
-    gameOver = true;
+    gameOver = true; 
   }
 
   if(gameOver == true){

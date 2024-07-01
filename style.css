@@ -1,125 +1,93 @@
 body {
   font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
-  background-size: cover;
-  height: 140vh;
+  background-color: #73c1f5;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "East Sea Dokdo", cursive;
-  background-image: url(img/soju.jpeg);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #c7e5ff;
+  width: 60%;
+  height: 90%;
+
+}
+
+.sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
-.container {
-    border: 10px solid white;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgba(247, 243, 242, 0.7);
-  }
+.big-title{
+  color: #285e32;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.sub-title{
+  color: #285e32;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.green-text{
+  color: #46d460;
+}
+
+#result-area h1{
+  margin-bottom: 0;
+}
+
+
+.reset{
+  display: flex;
+  justify-content: center;
+}
+
 .input-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+  padding-top: 10px;
+  justify-content: center;
 }
 
-  .form-control {
-    size: 100%;
-    font-size: 3vw;
-    margin-right: 20px;
-    text-align: center;
-  }
+
+#play-button{
+  background-color: #46d460;
+  border-radius: 10px;
+  outline: #285e32 1px solid;
+  width: 50px;
+  height: 30px;
+  color: white;
+  font: 2em;
+}
+
+#reset-button{
+  background-color: #e2fa07;
+  border-radius: 10px;
+  outline: #285e32 1px solid;
+  width: 50px;
+  height: 20px;
+  color: black;
+  font: 2em;
+}
+
+#play-button:hover{
+  filter: brightness(110%);
+}
+
+#reset-button:hover{
+  background-color: #46d460;
+  color: white;
+}
 
 
-  .big-title{
-    font-size: 5vw;
-    font-weight: bold;
-    color: blue;
-  }
-
-  title {
-    font-size: 7vw;
-    font-weight: bold;
-  }
-  .sub-title {
-    font-size: 6vw;
-    font-weight: bold;
-    margin-left: 3px;
-    margin-right: 3px;
-  }
-  .main-img{
-    width: 30vw;
-    height:30vh;
-  }
-
-  .red-text{
-    color: red;
-  }
-
-  .go-bttn{
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-    height: 40px;
-    width:100px;
-    font-size: 20pt;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .reset-bttn{
-    background-color: yellow;
-    color: black;
-    border-radius: 10px;
-    height: 40px;
-    width:100px;
-    font-size: 20pt;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  @media (max-width: 800px){
-    .big-title {
-        font-size: 10vw;
-      }
-      .title {
-        font-size: 12vw;
-      }
-      .sub-title {
-        font-size: 11vw;
-      }
-      .form-control {
-        font-size: 8vw;
-        max-width: 500px;
-        margin-right: 0px;
-      }
-      .main-img {
-        width: 40vw;
-      }
-
-      .input-box{
-        flex-direction: column;
-        
-      }
-
-      .go-bttn{
-
-        border-radius: 5px;
-        height: 20px;
-        width:60px;
-        font-size: 10pt;
-      }
-
-      .reset-bttn{
-
-        border-radius: 5px;
-        height: 20px;
-        width:60px;
-        font-size: 10pt;
-      }
-    
-  }
