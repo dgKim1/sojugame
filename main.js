@@ -63,9 +63,8 @@ function play() {
 
 function reset() {
     userInput.value = "";
-    chance = 5;
+    chance = 3;
+    chanceArea.textContent=`남은 기회 ${chance}번`;
     //새로운 넘버 생성
     pickRandomNum();
-
-    resultArea.textContent = "결과값이 여기 나옵니다";
 }
